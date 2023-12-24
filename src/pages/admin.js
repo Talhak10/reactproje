@@ -29,7 +29,7 @@ const Admin = () => {
 
       <div>
         <h2>Kullanıcı Ekle</h2>
-        <input
+        <input   //yeni kullanıcı eklediğim yer 
           type="text"
           placeholder="Yeni Kullanıcı Adı"
           value={newUser}
@@ -40,7 +40,7 @@ const Admin = () => {
 
       <div>
         <h2>Ders Ekle</h2>
-        <input
+        <input //yeni ders eklediğim yer 
           type="text"
           placeholder="Yeni Ders Adı"
           value={newCourse}
@@ -48,10 +48,10 @@ const Admin = () => {
         />
         <button onClick={handleAddCourse}>Ekle</button>
       </div>
-
-      <div>
+      
+      <div>        
         <h2>Öğretmen Ekle</h2>
-        <input
+        <input  //yeni öğretmen eklediğim yer 
           type="text"
           placeholder="Yeni Öğretmen Adı"
           value={newTeacher}
@@ -61,16 +61,16 @@ const Admin = () => {
       </div>
 
       <div>
-        <h2>Kullanıcılar</h2>
-        <ul>
+        <h2>Kullanıcılar</h2>  
+        <ul> 
           {users.map((user, index) => (
-            <li key={index}>{user}</li>
+            <li key={index}>{user}</li> // eklenen kullanıcıların göründüğü kısım
           ))}
         </ul>
-      </div>
+      </div> 
 
       <div>
-        <h2>Dersler</h2>
+        <h2>Dersler</h2> 
         <ul>
           {courses.map((course, index) => (
             <li key={index}>{course}</li>

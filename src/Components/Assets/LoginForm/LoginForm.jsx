@@ -8,7 +8,7 @@ const LoginScreen = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Burada tanımlanan listeyle giriş kontrollerini yapabilirsin
+    // kullanıcı bilgilerini buraya girdim
     const userList = [
       { "Ogrenci": "1234" },
       { "Ogretmen": "1234" },
@@ -17,7 +17,7 @@ const LoginScreen = () => {
     ];
 
     const foundUser = userList.find(user => user[username] === password);
-
+    //burda koşul ile nereye gidiceğini gösterdim
     if (foundUser) {
       switch (username) {
         case 'Ogrenci':
@@ -39,7 +39,7 @@ const LoginScreen = () => {
       alert('Kullanıcı adı veya şifre hatalı!');
     }
   };
-
+   // login kımı  ve onchange ile yönledirme 
   return (
     <div className="App">
       <div className="login-container">

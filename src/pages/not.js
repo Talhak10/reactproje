@@ -3,6 +3,7 @@ import './not.css';
 
 class Not extends Component {
   state = {
+    // api olmadığı için kendi girdiğim bilgiler
     bilgiler: [
       {
         "isim": "Talha ",
@@ -89,8 +90,9 @@ class Not extends Component {
             ))}
           </tbody>
         </table>
-
+        
         {this.state.seciliOgrenci && (
+           //yukarda kendi girdiğim bilgileri burda çektim
           <div>
             <h2>{this.state.seciliOgrenci.isim} Detayları</h2>
             <p><strong>Ders:</strong> {this.state.seciliOgrenci.ders1}</p>

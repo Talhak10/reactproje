@@ -6,17 +6,17 @@ function App() {
 
 
  
-
+  //burda fetch komutu ile apiden veri çekme işlemini yaptım
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => setPosts(data))
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Error fetching data:', error)); //consolda bi error olursa göstermesi için
   }, []);  
 
   return (
 
-
+    //apideki bilgilerin gözükmesi için kullandığım yer
     <div className="container">
       <h1>Örenci Bilgileri</h1>
       <ul>

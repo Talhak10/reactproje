@@ -3,7 +3,7 @@ import './ogrencinot.css';
 
 class Not extends Component {
   state = {
-    bilgiler: [
+    bilgiler: [  //api olmadığı için kendi yazdığım bilgiler 
       {
         "isim": "Talha ",
         "ders1": "WEB",
@@ -54,10 +54,10 @@ class Not extends Component {
             ))}
           </tbody>
         </table>
-
-        {this.state.seciliOgrenci && (
-          <div>
-            <h2>{this.state.seciliOgrenci.isim} Detayları</h2>
+           
+        {this.state.seciliOgrenci && ( // yukarda kendi girdiğim verilerin gösterilmesi için kullandığım yer 
+          <div> 
+            <h2>{this.state.seciliOgrenci.isim} Detayları</h2> 
             <p><strong>Ders:</strong> {this.state.seciliOgrenci.ders1}</p>
             <p><strong>Öğretmen:</strong> {this.state.seciliOgrenci.ogretmen1}</p>
             <p><strong>Not:</strong> {this.state.seciliOgrenci.Not1}</p>
