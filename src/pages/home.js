@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './home.css';
-
+import { Link } from 'react-router-dom';
 function App() {
   const [posts, setPosts] = useState([]);
+
+
+ 
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -12,8 +15,10 @@ function App() {
   }, []);  
 
   return (
+
+
     <div className="container">
-      <h1>NOTLAR</h1>
+      <h1>Örenci Bilgileri</h1>
       <ul>
         {posts.map(post => (
           <li key={post.id}>
